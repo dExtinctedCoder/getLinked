@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const ErrorPage = (): React.ReactElement => {
-    return (
-        <div>
-            ErrorPage
-        </div>
-    );
+	return <div>ErrorPage</div>;
 };
 
 export default ErrorPage;

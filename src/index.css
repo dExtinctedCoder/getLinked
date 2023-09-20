@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @layer utilities {
-    .pry-color {
-        background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
-    }
-    .pry-black {
-        background-color: #150E28;
-    }
-    .sec-color {
-        background-color: #903AFF;
-    }
-    .ter-color {
-        background-color: #D434FE;
-    }
+	.pry-color {
+		background: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+	}
+	.pry-black {
+		background-color: #150e28;
+	}
+	.sec-color {
+		background-color: #903aff;
+	}
+	.ter-color {
+		background-color: #d434fe;
+	}
 }

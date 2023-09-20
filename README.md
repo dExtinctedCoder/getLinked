@@ -4,16 +4,18 @@ Welcome to my coding challenge repository! This README will provide you with all
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [Acknowledgments](#acknowledgments)
+- [Coding Challenge Repository](#coding-challenge-repository)
+  - [Table of Contents](#table-of-contents)
+  - [Project Overview](#project-overview)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Usage](#usage)
+  - [Project Structure](#project-structure)
+  - [Contributing](#contributing)
+  - [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -38,6 +40,7 @@ In this coding challenge, I have created a project that leverages the provided F
 The following technologies were used to build this project:
 
 - **Frontend**:
+
   - [React](https://react.dev/)
   - [TypeScript](https://www.typescriptlang.org/)
   - [tailwindcss](https://tailwindcss.com/)
