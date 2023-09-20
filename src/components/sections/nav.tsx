@@ -6,8 +6,8 @@ import { Link, NavLink } from "react-router-dom";
 
 const Nav = (): React.ReactElement => {
 	return (
-		<header className="flex py-7 px-12 items-center justify-between border-b border-b-[#ffffff2d] lg:py-16 lg:px-32">
-			<Link to="/" className="block w-[72px] md:w-[171px]">
+		<header className="flex py-7 px-6 items-center justify-between border-b border-b-[#ffffff2d] lg:py-[31.5px] lg:px-16">
+			<Link to="/" className="block w-[72px] lg:w-[171px]">
 				<img src={LOGO} alt="get-linked.png" />
 			</Link>
 			<div className="cursor-pointer md:hidden">
