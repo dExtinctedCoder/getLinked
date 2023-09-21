@@ -66,9 +66,9 @@ const HomePage = (): React.ReactElement => {
 						<Button
 							text="register"
 							to="/register"
-							extras="mb-[14.16px] md:mb-[45.58px] lg:mb-[77px]"
+							extras="mb-[14.16px] md:mb-[45.58px]"
 						/>
-						<div className="flex items-center gap-x-5 justify-between font-['Unica_One'] lg:pb-11">
+						<div className="flex items-center gap-x-5 justify-between font-['Unica_One']">
 							<h5 className="text-5xl font-normal lg:text-[64px]">
 								00
 								<span className="text-sm">H</span>
@@ -83,12 +83,18 @@ const HomePage = (): React.ReactElement => {
 							</h5>
 						</div>
 					</div>
-					<img
-						style={{ backgroundImage: `url(${GLOBE})` }}
-						src={ManInVR}
-						alt="man-wearing-smart-glasses-touching-virtual-screen 1"
-						className="bg-no-repeat bg-[length:338.067px] bg-top lg:bg-[length:500px] lg:bg-left-top lg:w-[45%]"
-					/>
+					<div className="relative min-h-full">
+						<img
+							src={ManInVR}
+							alt="man-wearing-smart-glasses-touching-virtual-screen"
+							className="h-full"
+						/>
+						<img
+							src={GLOBE}
+							alt="globe"
+							className="absolute z-10 top-0 right-0 left-0 w-[80%] m-auto"
+						/>
+					</div>
 				</div>
 			</section>
 			<hr className="border-0 h-[1px] bg-[#ffffff2d]" />
