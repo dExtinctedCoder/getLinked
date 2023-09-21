@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "../utilities/button";
 import LOGO from "../../assets/images/getlinked.png";
-import MENU from "../../assets/icons/Vector (3).svg";
 import { Link, NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { OPEN_MENU, toggleMenu } from "../../store/app/app.actions";
 import Menu from "./menu";
+import MenuBtn from "../utilities/menuBtn";
 
 const Nav = (): React.ReactElement => {
 	const menuState = useAppSelector((state) => state.appReducer.menuState);
@@ -20,7 +20,7 @@ const Nav = (): React.ReactElement => {
 				onClick={() => dispatchMenuAction(toggleMenu(OPEN_MENU))}
 				className="cursor-pointer md:hidden"
 			>
-				<img src={MENU} alt="menu button" />
+				<MenuBtn />
 			</div>
 			<nav className="hidden items-center justify-between gap-x-9 md:flex lg:gap-x-14">
 				<NavLink to="/#timeline" className="font-normal text-base text-white">
