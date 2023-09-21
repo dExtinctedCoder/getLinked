@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../components/sections/nav";
 import Vector4 from "../assets/images/Vector4.png";
 import Button from "../components/utilities/button";
@@ -8,8 +8,15 @@ import CHAIN from "../assets/images/chain-9365116-7621444.png";
 import BULB from "../assets/images/Creative1.png";
 import GLOBE from "../assets/images/image-1.png";
 import BLUR_PURPLE from "../assets/images/purple-lens-flare-png.png";
+import { useAppDispatch } from "../store/hooks";
+import { CLOSE_MENU, toggleMenu } from "../store/app/app.actions";
 
 const HomePage = (): React.ReactElement => {
+	const dispatchMenuAction = useAppDispatch();
+	useEffect(() => {
+		dispatchMenuAction(toggleMenu(CLOSE_MENU));
+	}, []);
+
 	return (
 		<div className="pry-black text-white">
 			<section
@@ -29,7 +36,7 @@ const HomePage = (): React.ReactElement => {
 				>
 					Igniting a Revolution in HR Innovation
 				</h5>
-				<div className="flex flex-col justify-between gap-y-5 pt-10 lg:pl-28 lg:flex-row">
+				<div className="flex flex-col justify-between gap-y-5 pt-10 lg:pl-16 lg:flex-row">
 					<div className="z-10 flex flex-col items-center text-center lg:text-left lg:items-start">
 						<h3
 							style={{ backgroundImage: `url(${BULB})` }}
