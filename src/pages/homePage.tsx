@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../components/sections/nav";
 import Vector4 from "../assets/images/Vector4.png";
 import Button from "../components/utilities/button";
@@ -17,6 +17,8 @@ import WOMAN from "../assets/images/7450159 1.png";
 import ARROW from "../assets/images/arrow.png";
 import ELLIPSE from "../assets/images/Ellipse 2.png";
 import ManAndWoman from "../assets/images/8046554 1.png";
+import ManThinking from "../assets/images/cwok-casual-211.png";
+import QuestionMark from "../assets/images/_.png";
 import { useAppDispatch } from "../store/hooks";
 import { CLOSE_MENU, toggleMenu } from "../store/app/app.actions";
 import Section from "../components/sections/landingPageSection";
@@ -26,6 +28,49 @@ const HomePage = (): React.ReactElement => {
 	useEffect(() => {
 		dispatchMenuAction(toggleMenu(CLOSE_MENU));
 	}, []);
+
+	const [faqState, setFaqState] = useState([
+		{ faq: false },
+		{ faq: false },
+		{ faq: false },
+		{ faq: false },
+		{ faq: false },
+	]);
+	const setFaqStateFn = (index: number): void => {
+		const newState = [...faqState];
+		for (let i = 0; i < faqState.length; i++) {
+			if (i === index) {
+				continue;
+			} else {
+				newState[i].faq = false;
+				setFaqState(newState);
+			}
+		}
+		newState[index].faq = !faqState[index].faq;
+		setFaqState(newState);
+	};
+	const faqs = [
+		{
+			title: "Can I work on a project I started before the hackathon?",
+			text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem delectus nostrum maiores animi alias illo itaque, quod unde est laboriosam dignissimos reiciendis sint sapiente quidem facilis mollitia cum repellendus iusto. Quasi odit incidunt, optio neque totam rerum.",
+		},
+		{
+			title: "What happens if I need help during the hackathon?",
+			text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem delectus nostrum maiores animi alias illo itaque, quod unde est laboriosam dignissimos reiciendis sint sapiente quidem facilis mollitia cum repellendus iusto. Quasi odit incidunt, optio neque totam rerum.",
+		},
+		{
+			title: "What happens if I don't have an idea for a project?",
+			text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem delectus nostrum maiores animi alias illo itaque, quod unde est laboriosam dignissimos reiciendis sint sapiente quidem facilis mollitia cum repellendus iusto. Quasi odit incidunt, optio neque totam rerum.",
+		},
+		{
+			title: "Can I join a team or do I have to come with one?",
+			text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem delectus nostrum maiores animi alias illo itaque, quod unde est laboriosam dignissimos reiciendis sint sapiente quidem facilis mollitia cum repellendus iusto. Quasi odit incidunt, optio neque totam rerum.",
+		},
+		{
+			title: "What happens after the hackathon ends",
+			text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem delectus nostrum maiores animi alias illo itaque, quod unde est laboriosam dignissimos reiciendis sint sapiente quidem facilis mollitia cum repellendus iusto. Quasi odit incidunt, optio neque totam rerum.",
+		},
+	];
 
 	return (
 		<div className="pry-black text-white">
@@ -313,6 +358,103 @@ const HomePage = (): React.ReactElement => {
 							text="read more"
 							extras="m-auto w-fit lg:ml-0"
 						/>
+					</div>
+				}
+			/>
+			<hr className="border-0 h-[1px] bg-[#ffffff2d]" />
+			<Section
+				label="faqs-section"
+				src={ManThinking}
+				alt="man-thinking"
+				extras="flex-col-reverse gap-y-32 lg:flex-row-reverse lg:pt-32"
+				misc={
+					<>
+						<img
+							src={QuestionMark}
+							alt="question-mark-illustration"
+							className="absolute left-[36%] top-[50%] lg:left-auto lg:right-[31.5%] lg:top-[8%]"
+						/>
+						<img
+							src={QuestionMark}
+							alt="question-mark-illustration"
+							className="absolute w-[25px] left-[18%] top-[55%] lg:left-auto lg:right-[22.5%] lg:top-[17%]"
+						/>
+						<img
+							src={QuestionMark}
+							alt="question-mark-illustration"
+							className="absolute w-[25px] left-[55%] top-[55%] lg:left-auto lg:right-[41%] lg:top-[17%]"
+						/>
+						<img
+							src={STAR_PURPLE}
+							alt="star.png"
+							className="absolute w-[18px] left-[15%] top-[3%] lg:left-[3%] lg:top-[20%]"
+						/>
+						<img
+							src={STAR_PURPLE}
+							alt="star.png"
+							className="absolute  w-[10px] m-auto top-[53%] lg:w-[15px] lg:right-[28%] lg:top-[15%]"
+						/>
+
+						<img
+							src={STAR_PURPLE}
+							alt="star.png"
+							className="absolute w-[7px] left-[28%] top-[68%] lg:left-[60%] lg:top-[30%] lg:w-[15px]"
+						/>
+						<img
+							src={STARGray}
+							alt="star.png"
+							className="absolute w-[10px] top-[77%] left-[13%] lg:w-[26px] lg:left-[53%] lg:top-[56%]"
+						/>
+						<img
+							src={STAR}
+							alt="star.png"
+							className="absolute w-[16px] bottom-[3%] right-[27%] lg:right-[15%]"
+						/>
+					</>
+				}
+				textBox={
+					<div>
+						<h4 className="font-['Clash_Display'] text-center text-xl font-bold lg:text-[32px] lg:mb-2 lg:text-left">
+							Frequently Ask
+						</h4>
+						<h4 className="font-['Clash_Display'] text-center text-xl font-bold mb-4 text-[#D434FE] lg:text-[32px] lg:mb-4 lg:text-left">
+							Question
+						</h4>
+						<p className="text-[13px] text-center leading-[27.5px] lg:text-sm lg:text-left">
+							We got answers to the questions that you might want to ask about
+							getlinked Hackathon 1.0
+						</p>
+						<ul className="pt-10">
+							{faqs.map((item, index) => {
+								return (
+									<li
+										key={index}
+										className="overflow-y-hidden pry-black z-10 relative h-fit flex flex-col items-start border-b border-[#D434FE]"
+									>
+										<div className="flex items-center justify-between w-full pr-2">
+											<h5 className="text-xs py-3 leading-[18px]">
+												{item.title}
+											</h5>
+											<span
+												onClick={() => {
+													setFaqStateFn(index);
+												}}
+												className={`${
+													faqState[index].faq ? `rotate-90` : `rotate-[360deg]`
+												} transition-transform inline-block text-[#D434FE] text-xl cursor-pointer`}
+											>
+												+
+											</span>
+										</div>
+										{faqState[index].faq ? (
+											<div className="py-3 text-xs leading-5">{item.text}</div>
+										) : (
+											""
+										)}
+									</li>
+								);
+							})}
+						</ul>
 					</div>
 				}
 			/>
