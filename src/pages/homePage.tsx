@@ -15,7 +15,7 @@ import STARGray from "../assets/images/stargray.png";
 import BigIdea from "../assets/images/thebigIdea1.png";
 import WOMAN from "../assets/images/7450159 1.png";
 import ARROW from "../assets/images/arrow.png";
-import ELLIPSE from "../assets/images/ellipse 2.png";
+import ELLIPSE from "../assets/images/Ellipse 2.png";
 import ManAndWoman from "../assets/images/8046554 1.png";
 import { useAppDispatch } from "../store/hooks";
 import { CLOSE_MENU, toggleMenu } from "../store/app/app.actions";
