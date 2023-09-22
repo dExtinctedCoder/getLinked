@@ -7,7 +7,10 @@ import BLAST from "../assets/images/1f4a5.png";
 import CHAIN from "../assets/images/chain-9365116-7621444.png";
 import BULB from "../assets/images/Creative1.png";
 import GLOBE from "../assets/images/image-1.png";
-import BLUR_PURPLE from "../assets/images/purple-lens-flare-png.png";
+import PURPLELENS1 from "../assets/images/purple-lens-flare-png.png";
+import PURPLELENS2 from "../assets/images/purple-lens-flare-png-2.png";
+import STAR from "../assets/images/star.png";
+import STARGray from "../assets/images/stargray.png";
 import { useAppDispatch } from "../store/hooks";
 import { CLOSE_MENU, toggleMenu } from "../store/app/app.actions";
 
@@ -21,13 +24,24 @@ const HomePage = (): React.ReactElement => {
 		<div className="pry-black text-white">
 			<section
 				aria-label="hero section"
-				style={{
-					backgroundImage: `url(${BLUR_PURPLE}), lightgray
-				`,
-				}}
-				className="bg-blend-hard-light bg-no-repeat bg-[top_13%_left_-120px] bg-[length:100%] lg:bg-[length:50%] lg:bg-[top_left_100px]"
+				className="relative bg-blend-hard-light bg-no-repeat bg-[top_13%_left_-120px] bg-[length:100%] lg:bg-[length:50%] lg:bg-[top_left_100px]"
 			>
 				<Nav />
+				<img
+					src={PURPLELENS1}
+					alt="purple-lens-flare-png.png"
+					className="absolute -left-[20%] bg-blend-hard-light top-[15%] inset-0 lg:w-1/2 lg:left-[6%]"
+				/>
+				<img
+					src={STAR}
+					alt="star.png"
+					className="w-3 top-[18%] left-[35%] absolute lg:w-fit lg:left-[8%] lg:top-[20%]"
+				/>
+				<img
+					src={STARGray}
+					alt="star-gray.png"
+					className="w-2 top-[41%] right-[28%] absolute lg:w-fit lg:left-[30%] lg:inset-auto lg:bottom-[20%]"
+				/>
 				<h5
 					style={{
 						backgroundImage: `url(${Vector4})`,
@@ -87,12 +101,17 @@ const HomePage = (): React.ReactElement => {
 						<img
 							src={ManInVR}
 							alt="man-wearing-smart-glasses-touching-virtual-screen"
-							className="h-full"
+							className="z-10 h-full"
 						/>
 						<img
 							src={GLOBE}
 							alt="globe"
-							className="absolute z-10 top-0 right-0 left-0 w-[80%] m-auto"
+							className="absolute z-20 top-0 right-0 left-0 w-4/5 m-auto"
+						/>
+						<img
+							src={PURPLELENS2}
+							alt="purple-lens-flare-png.png"
+							className="absolute bg-blend-hard-light inset-0 h-full -top-[20%] left-[10%] m-auto w-fit -rotate-90"
 						/>
 					</div>
 				</div>
