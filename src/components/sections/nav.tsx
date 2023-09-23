@@ -36,7 +36,7 @@ const Nav = (): React.ReactElement => {
 					Contact
 				</NavLink>
 			</nav>
-			<Button to="/register" text="register" extras="hidden md:flex" />
+			<Button to="/register" isNavBtn text="register" extras="hidden md:flex" />
 			{menuState ? <Menu /> : ""}
 		</header>
 	);
