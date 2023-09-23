@@ -19,6 +19,10 @@ import ELLIPSE from "../assets/images/Ellipse 2.png";
 import ManAndWoman from "../assets/images/8046554 1.png";
 import ManThinking from "../assets/images/cwok-casual-211.png";
 import QuestionMark from "../assets/images/_.png";
+import PRIZECUP from "../assets/images/9486889 1.png";
+import GoldMedal from "../assets/images/gold_medal 1.png";
+import SilverMedal from "../assets/images/silver_medal 1.png";
+import BronzeMedal from "../assets/images/bronze_medal 1.png";
 import { useAppDispatch } from "../store/hooks";
 import { CLOSE_MENU, toggleMenu } from "../store/app/app.actions";
 import Section from "../components/sections/landingPageSection";
@@ -628,6 +632,100 @@ const HomePage = (): React.ReactElement => {
 				/>
 			</section>
 			<hr className="border-0 h-[1px] bg-[#ffffff2d]" />
+			<section className="relative bg-[#100B20] pt-16 pb-28 lg:px-16">
+				<div className="lg:m-auto lg:w-fit lg:mr-0 lg:px-24">
+					<h4 className="font-['Clash_Display'] text-center text-xl font-bold lg:text-left lg:text-[32px] lg:mb-2">
+						Prizes and
+					</h4>
+					<h4 className="font-['Clash_Display'] text-center text-xl font-bold mb-2 text-[#D434FE] lg:text-[32px] lg:mb-4 lg:text-left">
+						Rewards
+					</h4>
+					<p className="text-[13px] text-center leading-[27.5px] lg:text-sm lg:text-left">
+						Highlight of the prizes or rewards for winners and for participants.
+					</p>
+				</div>
+				<div className="lg:flex items-center justify-between">
+					<img
+						src={PRIZECUP}
+						alt="prize-cup"
+						className="m-auto w-fit object-contain lg:m-0 lg:w-[45%]"
+					/>
+					<div className="flex gap-y-24 items-center justify-center gap-x-3 pt-40 px-[42px] lg:flex-nowrap lg:w-full">
+						<div className="relative w-[120px] aspect-[0.52] flex flex-col items-center justify-end rounded-lg border border-[#D434FE] bg-[#d434fe1e] lg:w-[200px] lg:aspect-[0.75]">
+							<p className="text-xs font-semibold mb-1 text-center lg:text-4xl">
+								2nd <br />
+								Runner
+							</p>
+							<p className="text-sm pb-4 font-bold text-[#D434FE] text-center lg:text-[32px] lg:leading-[69.248px]">
+								N300,000
+							</p>
+							<img
+								src={SilverMedal}
+								alt="gold-medal"
+								className="absolute -top-[25%] left-1/2 -translate-x-1/2 w-[75px] lg:w-[179px] lg:-top-[45%]"
+							/>
+						</div>
+						<div className="relative w-[120px] aspect-[0.52] flex flex-col items-center justify-end rounded-lg border border-[#D434FE] bg-[#d434fe1e] translate-y-4 lg:w-[200px] lg:aspect-[0.75]">
+							<p className="text-xs font-semibold mb-1 text-center lg:text-4xl">
+								1st <br />
+								Runner
+							</p>
+							<p className="text-smp pb-4 font-bold text-[#903AFF] text-center lg:text-[32px] lg:leading-[69.248px]">
+								N400,000
+							</p>
+							<img
+								src={GoldMedal}
+								alt="gold-medal"
+								className="absolute scale-[2] -top-[25%] left-1/2 -translate-x-1/2 w-[75px] lg:w-[179px] lg:-top-[45%] lg:scale-[1.45]"
+							/>
+						</div>
+						<div className="relative w-[120px] aspect-[0.52] flex flex-col items-center justify-end rounded-lg border border-[#D434FE] bg-[#d434fe1e] lg:w-[200px] lg:aspect-[0.75]">
+							<p className="text-xs font-semibold mb-1 text-center lg:text-4xl">
+								3rd <br />
+								Runner
+							</p>
+							<p className="text-sm pb-4 font-bold text-[#D434FE] text-center lg:text-[32px] lg:leading-[69.248px]">
+								N150,000
+							</p>
+							<img
+								src={BronzeMedal}
+								alt="gold-medal"
+								className="absolute -top-[25%] left-1/2 -translate-x-1/2 w-[75px] lg:w-[179px] lg:-top-[45%]"
+							/>
+						</div>
+					</div>
+				</div>
+				<img
+					src={STAR_PURPLE}
+					alt="star-purple"
+					className="absolute top-[5%] left-[12%] lg:left-[20%]"
+				/>
+				<img
+					src={STAR_PURPLE}
+					alt="star-purple"
+					className="absolute top-[9%] right-[26%] lg:right-[20%] lg:top-[19%]"
+				/>
+				<img
+					src={STAR}
+					alt="star-white"
+					className="absolute w-[15px] top-[58%] left-[12%] lg:left-[50%] lg:top-[25%]"
+				/>
+				<img
+					src={STAR}
+					alt="star-white"
+					className="absolute w-[13px] right-[12%] top-[63%] lg:right-[6%] lg:top-[31%]"
+				/>
+				<img
+					src={STAR}
+					alt="star-white"
+					className="hidden absolute w-[13px] lg:left-[20%] lg:block"
+				/>
+				<img
+					src={STARGray}
+					alt="star-grey"
+					className="absolute w-[15px] bottom-[3%] right-[33%] lg:bottom-[12%] lg:right-[19%]"
+				/>
+			</section>
 		</div>
 	);
 };
