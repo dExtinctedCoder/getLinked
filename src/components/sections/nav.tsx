@@ -12,7 +12,7 @@ const Nav = (): React.ReactElement => {
 	const dispatchMenuAction = useAppDispatch();
 
 	return (
-		<header className="relative z-10 flex py-7 px-6 items-center justify-between border-b border-b-[#ffffff2d] lg:py-[31.5px] lg:px-16">
+		<header className="relative z-10 flex py-7 px-6 items-center justify-between lg:py-[31.5px] lg:px-16">
 			<Link to="/" className="block w-[72px] lg:w-[171px]">
 				<img src={LOGO} alt="get-linked.png" />
 			</Link>
