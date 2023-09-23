@@ -366,6 +366,7 @@ const HomePage = (): React.ReactElement => {
 				label="faqs-section"
 				src={ManThinking}
 				alt="man-thinking"
+				id="faqs"
 				extras="flex-col-reverse gap-y-32 lg:flex-row-reverse lg:pt-32"
 				misc={
 					<>
@@ -458,6 +459,175 @@ const HomePage = (): React.ReactElement => {
 					</div>
 				}
 			/>
+			<hr className="border-0 h-[1px] bg-[#ffffff2d]" />
+			<section
+				aria-label="timeline-section"
+				id="timeline-section"
+				className="relative py-8 pb-16 px-[42px] lg:py-10 lg:px-16 md:pb-32"
+			>
+				<h4 className="font-['Clash_Display'] text-center text-xl font-bold leading-[26.6px] lg:text-[32px] lg:leading-0 lg:mb-3">
+					Timeline
+				</h4>
+				<p className="text-sm mb-14 leading-[24.136px] max-w-[35ch] m-auto text-center">
+					Here is the breakdown of the time we anticipate using for the upcoming
+					event.
+				</p>
+				<div className="flex flex-col gap-y-7 md:gap-y-4">
+					<div className="flex items-stretch gap-x-4 md:justify-between md:items-end md:gap-x-28 md:min-h-max">
+						<div className="self-stretch flex flex-col gap-y-2 items-center justify-between md:order-2">
+							<span className="w-[2px] h-full ter-color md:w-1"></span>
+							<span className="text-xs font-bold p-[2px] aspect-square flex items-center justify-center rounded-full pry-color md:p-2">
+								1
+							</span>
+						</div>
+						<div className="flex-col justify-between md:items-end md:order-1 md:text-right md:pt-16 md:w-1/2">
+							<h5 className="text-[#D434FE] text-xs font-bold mb-1">
+								Hackathon Announcement
+							</h5>
+							<p className="text-xs leading-[19.188px] md:m-auto md:mr-0 mb-2 md:max-w-[52ch] md:mb-0">
+								The getlinked tech hackathon 1.0 is formally announced to the
+								general public and teams begin to get ready to register
+							</p>
+							<span className="text-[#D434FE] text-xs font-bold md:hidden">
+								November 18, 2023
+							</span>
+						</div>
+						<span className=" hidden text-[#D434FE] text-xs font-bold md:w-1/2 md:block md:order-3">
+							November 18, 2023
+						</span>
+					</div>
+					<div className="flex items-stretch gap-x-4 md:justify-between md:items-end md:gap-x-28 md:min-h-max">
+						<div className="self-stretch flex flex-col gap-y-2 items-center justify-between md:order-2">
+							<span className="w-[2px] h-full ter-color md:w-1"></span>
+							<span className="text-xs font-bold p-[2px] aspect-square flex items-center justify-center rounded-full pry-color md:p-2">
+								2
+							</span>
+						</div>
+						<div className="flex-col justify-between md:order-3 md:pt-16 md:w-1/2">
+							<h5 className="text-[#D434FE] text-xs font-bold mb-1">
+								Teams Registration begins
+							</h5>
+							<p className="text-xs leading-[19.188px] mb-2 md:max-w-[52ch] md:mb-0">
+								Interested teams can now show their interest in the getlinked
+								tech hackathon 1.0 2023 by proceeding to register
+							</p>
+							<span className="text-[#D434FE] text-xs font-bold md:hidden">
+								November 18, 2023
+							</span>
+						</div>
+						<span className="hidden text-[#D434FE] text-xs font-bold md:w-1/2 md:block lg:text-right md:order-1">
+							November 18, 2023
+						</span>
+					</div>
+					<div className="flex items-stretch gap-x-4 md:justify-between md:items-end md:gap-x-28 md:min-h-max">
+						<div className="self-stretch flex flex-col gap-y-2 items-center justify-between md:order-2">
+							<span className="w-[2px] h-full ter-color md:w-1"></span>
+							<span className="text-xs font-bold p-[2px] aspect-square flex items-center justify-center rounded-full pry-color md:p-2">
+								3
+							</span>
+						</div>
+						<div className="flex-col justify-between md:items-end md:order-1 md:text-right md:pt-16 md:w-1/2">
+							<h5 className="text-[#D434FE] text-xs font-bold mb-1">
+								Teams Registration ends
+							</h5>
+							<p className="text-xs leading-[19.188px] md:m-auto md:mr-0 mb-2 md:max-w-[52ch] md:mb-0">
+								Interested Participants are no longer Allowed to register
+							</p>
+							<span className="text-[#D434FE] text-xs font-bold md:hidden">
+								November 18, 2023
+							</span>
+						</div>
+						<span className=" hidden text-[#D434FE] text-xs font-bold md:w-1/2 md:block md:order-3">
+							November 18, 2023
+						</span>
+					</div>
+					<div className="flex items-stretch gap-x-4 md:justify-between md:items-end md:gap-x-28 md:min-h-max">
+						<div className="self-stretch flex flex-col gap-y-2 items-center justify-between md:order-2">
+							<span className="w-[2px] h-full ter-color md:w-1"></span>
+							<span className="text-xs font-bold p-[2px] aspect-square flex items-center justify-center rounded-full pry-color md:p-2">
+								4
+							</span>
+						</div>
+						<div className="flex-col justify-between md:order-3 md:pt-16 md:w-1/2">
+							<h5 className="text-[#D434FE] text-xs font-bold mb-1">
+								Announcement of the accepted teams and ideas
+							</h5>
+							<p className="text-xs leading-[19.188px] mb-2 md:max-w-[52ch] md:mb-0">
+								All teams whom idea has been accepted into getlinked tech
+								hackathon 1.0 2023 are formally announced
+							</p>
+							<span className="text-[#D434FE] text-xs font-bold md:hidden">
+								November 18, 2023
+							</span>
+						</div>
+						<span className="hidden text-[#D434FE] text-xs font-bold md:w-1/2 md:block lg:text-right md:order-1">
+							November 18, 2023
+						</span>
+					</div>
+					<div className="flex items-stretch gap-x-4 md:justify-between md:items-end md:gap-x-28 md:min-h-max">
+						<div className="self-stretch flex flex-col gap-y-2 items-center justify-between md:order-2">
+							<span className="w-[2px] h-full ter-color md:w-1"></span>
+							<span className="text-xs font-bold p-[2px] aspect-square flex items-center justify-center rounded-full pry-color md:p-2">
+								5
+							</span>
+						</div>
+						<div className="flex-col justify-between md:items-end md:order-1 md:text-right md:pt-16 md:w-1/2">
+							<h5 className="text-[#D434FE] text-xs font-bold mb-1">
+								Getlinked Hackathon 1.0 Offically Begins
+							</h5>
+							<p className="text-xs leading-[19.188px] md:m-auto md:mr-0 mb-2 md:max-w-[52ch] md:mb-0">
+								Accepted teams can now proceed to build their ground breaking
+								skill driven solutions
+							</p>
+							<span className="text-[#D434FE] text-xs font-bold md:hidden">
+								November 18, 2023
+							</span>
+						</div>
+						<span className=" hidden text-[#D434FE] text-xs font-bold md:w-1/2 md:block md:order-3">
+							November 18, 2023
+						</span>
+					</div>
+					<div className="flex items-stretch gap-x-4 md:justify-between md:items-end md:gap-x-28 md:min-h-max">
+						<div className="self-stretch flex flex-col gap-y-2 items-center justify-between md:order-2">
+							<span className="w-[2px] h-full ter-color md:w-1"></span>
+							<span className="text-xs font-bold p-[2px] aspect-square flex items-center justify-center rounded-full pry-color md:p-2">
+								6
+							</span>
+						</div>
+						<div className="flex-col justify-between md:order-3 md:pt-16 md:w-1/2">
+							<h5 className="text-[#D434FE] text-xs font-bold mb-1">
+								Demo Day
+							</h5>
+							<p className="text-xs leading-[19.188px] mb-2 md:max-w-[52ch] md:mb-0">
+								Teams get the opportunity to pitch their projects to judges. The
+								winner of the hackathon will also be announced on this day
+							</p>
+							<span className="text-[#D434FE] text-xs font-bold md:hidden">
+								November 18, 2023
+							</span>
+						</div>
+						<span className="hidden text-[#D434FE] text-xs font-bold md:w-1/2 md:block lg:text-right md:order-1">
+							November 18, 2023
+						</span>
+					</div>
+				</div>
+				<img
+					src={STAR_PURPLE}
+					alt="star-purple"
+					className="absolute top-[15%] left-[16%] md:top-[19%] md:left-[32%] md:w-[15px]"
+				/>
+				<img
+					src={STAR}
+					alt="star-white"
+					className="absolute top-[54%] right-[15%] w-[10px] md:w-[26px] md:top-[50%]"
+				/>
+				<img
+					src={STARGray}
+					alt="star-gray"
+					className="absolute left-[5%] bottom-[4%] w-[10px] md:w-[26px] md:left-[4%] md:bottom-[3%]"
+				/>
+			</section>
+			<hr className="border-0 h-[1px] bg-[#ffffff2d]" />
 		</div>
 	);
 };
