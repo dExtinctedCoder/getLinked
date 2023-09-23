@@ -83,6 +83,7 @@ const HomePage = (): React.ReactElement => {
 				className="relative bg-blend-hard-light bg-no-repeat bg-[top_13%_left_-120px] bg-[length:100%] lg:bg-[length:50%] lg:bg-[top_left_100px]"
 			>
 				<Nav />
+				<hr className="border-0 h-[1px] bg-[#ffffff2d]" />
 				<img
 					src={PURPLELENS1}
 					alt="purple-lens-flare-png.png"
@@ -175,6 +176,7 @@ const HomePage = (): React.ReactElement => {
 			<hr className="border-0 h-[1px] bg-[#ffffff2d]" />
 			<Section
 				label="introduction-section"
+				id="introduction-section"
 				src={BigIdea}
 				alt="the-big-idea-illustration"
 				extras="gap-y-12"
@@ -370,7 +372,7 @@ const HomePage = (): React.ReactElement => {
 				label="faqs-section"
 				src={ManThinking}
 				alt="man-thinking"
-				id="faqs"
+				id="faqs-section"
 				extras="flex-col-reverse gap-y-32 lg:flex-row-reverse lg:pt-32"
 				misc={
 					<>
