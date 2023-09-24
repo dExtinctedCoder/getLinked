@@ -6,7 +6,7 @@ import ContactPage from "./pages/contactPage";
 import RegisterPage from "./pages/registerPage";
 import ErrorPage from "./pages/errorPage";
 
-const queryClient = new QueryClient();
+export const queryClient = new QueryClient();
 
 function App(): React.ReactElement {
 	return (
