@@ -34,3 +34,17 @@ const Button = ({
 };
 
 export default Button;
+
+export const FormButton = ({
+	text,
+	extras,
+}: buttonProps): React.ReactElement => {
+	return (
+		<button
+			type="submit"
+			className={`${extras} flex items-center justify-center pry-color text-white rounded capitalize text-sm py-[14px] px-[46px] lg:text-base lg:py-4 lg:px-[52px]`}
+		>
+			{text}
+		</button>
+	);
+};
